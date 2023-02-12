@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <h2 className="titels">Bel</h2>
+          <h2 className="titel1">Bel</h2>
           <ReactAudioPlayer
               className={"audio-player"}
               src={belAudio}

@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,9 +28,19 @@
   color: darkslategrey;
   font-family: "Georgia", serif;
   letter-spacing: -2px;
-  margin-bottom: 0px;
+  margin-bottom: -10px;
   margin-top: 30px;
 }
+
+
+.titel1{
+  color: darkslategrey;
+  font-family: "Georgia", serif;
+  letter-spacing: -2px;
+  margin-bottom: -10px;
+  margin-top: 0px;
+}
+
 
 .audio-player{
   width: 90vw;
