@@ -1,22 +1,62 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactAudioPlayer from "react-audio-player";
+import belAudio from './AUDIO-bel.mp3' ;
+import kleurenAudio from './AUDIO-kleuren.mp3' ;
+import madrasAudio from './AUDIO-madras.mp3' ;
+import pronkenAudio from './AUDIO-pronken.mp3' ;
+import verankerenAudio from './AUDIO-verankeren.mp3' ;
+import vooroudersAudio from './AUDIO-voorouders.mp3' ;
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <h2 className="titels">Bel</h2>
+          <ReactAudioPlayer
+              className={"audio-player"}
+              src={belAudio}
+              autoPlay={false}
+              controls
+              controlsList="nodownload"
+          />
+          <h2 className="titels">Pronken</h2>
+          <ReactAudioPlayer
+              className={"audio-player"}
+              src={pronkenAudio}
+              autoPlay={false}
+              controls
+              controlsList="nodownload"
+          />
+          <h2 className="titels">Kleuren</h2>
+          <ReactAudioPlayer
+              className={"audio-player"}
+              src={kleurenAudio}
+              controls
+              controlsList="nodownload"
+          />
+          <h2 className="titels">Madras</h2>
+          <ReactAudioPlayer
+              className={"audio-player"}
+              src={madrasAudio}
+              controls
+              controlsList="nodownload"
+          />
+          <h2 className="titels">Verankeren</h2>
+          <ReactAudioPlayer
+              className={"audio-player"}
+              src={verankerenAudio}
+              controls
+              controlsList="nodownload"
+          />
+          <h2 className="titels">Voorouders</h2>
+          <ReactAudioPlayer
+              className={"audio-player"}
+              src={vooroudersAudio}
+              controls
+              controlsList="nodownload"
+          />
       </header>
     </div>
   );

@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fdda76;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,19 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.titels{
+  color: darkslategrey;
+  font-family: "Georgia", serif;
+  letter-spacing: -2px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+.audio-player{
+  width: 90vw;
+}
+
 
 .App-link {
   color: #61dafb;
